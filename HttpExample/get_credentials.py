@@ -3,8 +3,8 @@ from msrest.authentication import BasicAuthentication
 import pprint
 
 # Fill in with your personal access token and org URL
-personal_access_token = 'y4moovnkyfekc27cabecsuz6y2gplxylse3n7pg2bwyn3whqs3vq'
-organization_url = 'https://dev.azure.com/ianerolfe'
+personal_access_token = '<pat_token>'
+organization_url = '<org_url>'
 
 # Create a connection to the org
 credentials = BasicAuthentication('', personal_access_token)
@@ -13,7 +13,7 @@ connection = Connection(base_url=organization_url, creds=credentials)
 # Get a client (the "core" client provides access to projects, teams, etc)
 core_client = connection.clients.get_core_client()
 git_client= connection.clients.get_git_client()
-repository_id='3c16acf8-27e8-4950-ab65-f5e64300efe0'
+repository_id='<repo_id>'
 pull_request_id=1
 commits=git_client.get_pull_request_commits(repository_id, pull_request_id, project='HomeManager', top=None, continuation_token=None)
 print (commits.value[0].comment)
