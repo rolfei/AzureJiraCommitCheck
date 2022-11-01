@@ -27,7 +27,7 @@ def get_pr_commit_comments(git_client,pr_id):
     return commits
 
 def validate_comments(comments_list):
-    pattern = re.compile('JIRA')
+    pattern = re.compile('(^[A-Z]{2,3}-[0-9]{1,5}) +(.*)')
     for git_commit in comments_list:
         match = pattern.search(git_commit.comment)
         if match:
