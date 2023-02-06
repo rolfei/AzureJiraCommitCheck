@@ -1,17 +1,76 @@
-<mxfile host="app.diagrams.net" modified="2023-02-06T21:11:33.203Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="M-_FdfluKhM9jYSypKjw" version="20.8.16" type="github">
+<mxfile host="app.diagrams.net" modified="2023-02-06T23:35:22.522Z" agent="5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/109.0.0.0 Safari/537.36" etag="ZIrA5if3BRBh0LVhZCqG" version="20.8.16" type="github">
   <diagram name="Page-1" id="EFmz8oA9RWhHxVGzm2F2">
-    <mxGraphModel dx="714" dy="493" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="952" dy="657" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="JRKU9xBNxjADtYyzL5ID-1" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/devops/Azure_DevOps.svg;" parent="1" vertex="1">
-          <mxGeometry x="290" y="240" width="64" height="64" as="geometry" />
+        <mxCell id="sGJP9cCmishNoVMJ-akV-15" value="Azure DevOps - Send Commits to function" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/devops/Azure_DevOps.svg;" vertex="1" parent="1">
+          <mxGeometry x="610" y="342" width="108" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-4" value="Webhook event PR create" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.056;exitY=0.425;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.994;entryY=0.29;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JRKU9xBNxjADtYyzL5ID-1" target="JRKU9xBNxjADtYyzL5ID-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="320" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-5" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=-0.008;exitY=0.679;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="JRKU9xBNxjADtYyzL5ID-1" target="JRKU9xBNxjADtYyzL5ID-3">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="600" y="310" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-6" value="Webhook Event PR update" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sGJP9cCmishNoVMJ-akV-5">
+          <mxGeometry x="0.4277" y="-1" relative="1" as="geometry">
+            <mxPoint x="75" y="2" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRKU9xBNxjADtYyzL5ID-1" value="Azure DevOps -Call Azure function" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/devops/Azure_DevOps.svg;" parent="1" vertex="1">
+          <mxGeometry x="610" y="230" width="108" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-13" value="Commit message text for all commits in PR" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="JRKU9xBNxjADtYyzL5ID-2">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="350" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="JRKU9xBNxjADtYyzL5ID-2" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.git_repository;" parent="1" vertex="1">
-          <mxGeometry x="364" y="80" width="50" height="50" as="geometry" />
+          <mxGeometry x="622" y="360" width="84" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="JRKU9xBNxjADtYyzL5ID-3" value="" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" parent="1" vertex="1">
-          <mxGeometry x="50" y="254" width="68" height="60" as="geometry" />
+        <mxCell id="sGJP9cCmishNoVMJ-akV-7" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.024;entryY=1.044;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="300" y="490.3" as="sourcePoint" />
+            <mxPoint x="587.9840000000002" y="489.99600000000004" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-9" value="Post Custom Status" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="sGJP9cCmishNoVMJ-akV-7">
+          <mxGeometry x="-0.1044" y="2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-12" value="Request commit messages for PR" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.24;entryY=0.24;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="JRKU9xBNxjADtYyzL5ID-3" target="JRKU9xBNxjADtYyzL5ID-2">
+          <mxGeometry x="0.0021" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="JRKU9xBNxjADtYyzL5ID-3" value="JiraCommitCheck Azure Function&lt;br&gt;Validates commit messages" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/compute/Function_Apps.svg;" parent="1" vertex="1">
+          <mxGeometry x="140" y="244" width="131.47" height="116" as="geometry" />
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-3" value="Raise Pull Request" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="sGJP9cCmishNoVMJ-akV-1" target="JRKU9xBNxjADtYyzL5ID-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="430" y="150" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-1" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.user;" vertex="1" parent="1">
+          <mxGeometry x="400" y="40" width="47.5" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-11" value="Azure DevOps" style="aspect=fixed;html=1;points=[];align=center;image;fontSize=12;image=img/lib/azure2/devops/Azure_DevOps.svg;" vertex="1" parent="1">
+          <mxGeometry x="610" y="470" width="108" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-14" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.git_repository;" vertex="1" parent="1">
+          <mxGeometry x="622" y="244" width="84" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-16" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn4.iconfinder.com/data/icons/essentials-74/24/040_-_Tick-128.png" vertex="1" parent="1">
+          <mxGeometry x="630" y="500" width="68" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="sGJP9cCmishNoVMJ-akV-18" value="" style="verticalLabelPosition=bottom;html=1;verticalAlign=top;align=center;strokeColor=none;fillColor=#00BEF2;shape=mxgraph.azure.user;" vertex="1" parent="1">
+          <mxGeometry x="310" y="540" width="47.5" height="50" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
